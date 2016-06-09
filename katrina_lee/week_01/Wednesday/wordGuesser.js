@@ -9,7 +9,11 @@ var guessLetter = function(guess){
     console.log("You lost :( Sadly, the fat lady's sung and the man has hung!");
   }else{
   if(word.indexOf(guess) !== -1){ //need to add forloop
-    currentGuess[word.indexOf(guess)] = guess;
+    for (var i = 0; i < word.length; i++) {
+      if(word[i] === guess){
+        currentGuess[i] = guess;
+      }
+    }
     if(word.toString() === currentGuess.toString()){
       allLetters.push(guess);
       console.log(allLetters);
@@ -35,11 +39,5 @@ var guessLetter = function(guess){
     }
   }
 }
-var results = guessLetter("B");
-var results = guessLetter("U");
-r
 
-
-
-console.log(results);
 //how do i cover multiple letters in a word with the indexOf approach?//
