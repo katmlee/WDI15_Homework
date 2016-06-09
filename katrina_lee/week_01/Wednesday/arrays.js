@@ -89,6 +89,7 @@ for (var i = string.length; i < array.length; i++) {
 
 var wordArray = ["cat", "doggy", "ding", "gameofthrones", "something"];
 var answers = "";
+
 var findLongestWord = function() {
   for (var i = 0; i < wordArray.length; i++) {
   if ((wordArray[i].length) > (wordArray[i+1].length)){
@@ -99,4 +100,20 @@ var findLongestWord = function() {
   }
   return answers;
 }
-console.log(findLongestWord());
+findLongestWord();
+
+var wordArray = ["cat", "doggy", "ding", "gameofthrones", "something"];
+var filterLongWords = function(i){
+  return i >= 5;
+  }
+  var filtered = function(i){
+    wordArray.filter(filterLongWords);
+  };
+filtered(6);
+
+function isBigEnough (value) {
+  return value >= 10;
+}
+var filtered = [9, 8, 29, 18].filter(isBigEnough);
+
+isBigEnough();
