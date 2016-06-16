@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Badass Women of Computer Science</title>
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fansite.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1> Badass Women of Computer Science </h1>
+            <nav>
+                <ul>
+                    <li><a href="fansite.html">Home</a></li>
+                    <li><a href="ada.html">Ada Lovelace</a></li>
+                    <li><a href="grace.html">Grace Hopper</a></li>
+                    <li><a href="anita.html">Anita Borg</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div id="anita" class="heroImage">
+        <div class="imageText">
+            <h3> Anita Borg</h3>
+            <h4> Computer Scientist & Founder of IWT  </h4>
+        </div>
+    </div>
+    <div class="quoteBanner">
+        <h4> <i class="fa fa-quote-left fa-3x fa-pull-left edit-quote" aria-hidden="true"></i>If we want technology to serve society rather than enslave it, we have to build systems accessible to all people - be they male or female, young, old, disabled, computer wizards or technophobes.
+      </h4>
+
+    </div>
+    <div class="container">
+        <article>
+            <h2> Quick Facts </h2>
+            <ul>
+                <li><strong>Birth:</strong> January 17, 1949</li>
+                <li><strong>Birth Place:</strong> Illinois, USA</li>
+                <li><strong>Alma Mater:</strong> Ph.D New York University. </li>
+                <li><strong>Random Facts:</strong> She taught herself how to program while working at an insurance company. In 1999, President Bill Clinton appointed her to the Presidential Commission on the Advancement of Women and Minorities in Science,
+                    Engineering, and Technology.</li>
+                <li><strong>Contribution:</strong> Creator of Systers mailing lists. Developed MECCA, an email and web-based system for communicating with virtual communities. CTO at Xerox. Founder of Institute for Women and Technology and Grace Hopper Celebration
+                    of Women in Computing. </li>
+            </ul>
+        </article>
+        <iframe padding-top=2 0px width=52% height=260px src="https://www.youtube.com/embed/1yPxd5jqz_Q" frameborder="0" allowfullscreen>
+        </iframe>
+    </div>
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+    <div display=i nline-block; style='overflow:hidden;height:400px;width:100%;'>
+        <div id='gmap_canvas' style='height:300px;width:100%;'></div>
+        <div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div>
+        <div><small><a href="https://termsandcondiitionssample.com">terms and conditions sample</a></small></div>
+        <style>
+            #gmap_canvas img {
+                max-width: none!important;
+                background: none!important
+            }
+        </style>
+    </div>
+    <script type='text/javascript'>
+        function init_map() {
+            var myOptions = {
+                zoom: 11,
+                center: new google.maps.LatLng(42.34495850865054, -87.7461846135742),
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+            marker = new google.maps.Marker({
+                map: map,
+                position: new google.maps.LatLng(42.34495850865054, -87.7461846135742)
+            });
+            infowindow = new google.maps.InfoWindow({
+                content: '<strong>Anita\'s Birth Place</strong><br>Chicago, Illinois <br>'
+            });
+            google.maps.event.addListener(marker, 'click', function() {
+                infowindow.open(map, marker);
+            });
+            infowindow.open(map, marker);
+        }
+        google.maps.event.addDomListener(window, 'load', init_map);
+    </script>
+
+    </div>
+</body>
+<footer>
+    &copy; Copyright 2016
+</footer>
+
+</html>

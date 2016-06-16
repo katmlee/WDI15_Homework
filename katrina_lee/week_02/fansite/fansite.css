@@ -1,0 +1,162 @@
+  @import "compass/css3";
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700);
+@import url(https://fonts.googleapis.com/css?family=Sacramento);
+* {
+    box-sizing: border-box;
+}
+h1 {
+    font-family: 'Sacramento', cursive;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+    margin-bottom: 5px;
+    color: #76547b;
+}
+h2 {
+    color: #76547b;
+}
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+nav {
+    text-align: center;
+    padding: 15px;
+}
+nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+nav li {
+    display: inline-block;
+    padding: 10px;
+    color: black;
+}
+
+/*nav a {
+  color: black;
+}*/
+
+ul a {
+    text-decoration: none;
+    width: 100%;
+    color: white;
+}
+nav a {
+    color: black;
+}
+ul li:hover {
+    opacity: 0.5;
+}
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+.flex-item {
+    padding: 5px;
+    width: 250px;
+    height: 250px;
+    margin-top: 10px;
+    line-height: 250px;
+    color: white;
+    font-weight: lighter;
+    font-size: 3em;
+    text-align: center;
+    display: flex;
+}
+.flex-item: hover {
+    background-color: yellow;
+    opacity: 0.4;
+}
+.flex-item:nth-child(1) {
+    background: url("images/ada.jpg");
+    -webkit-filter: grayscale(100%);
+}
+.flex-item:nth-child(2) {
+    background: url("images/grace.jpg");
+}
+.flex-item:nth-child(3) {
+    background: url("images/anita.jpg");
+    -webkit-filter: grayscale(150%);
+}
+.heroImage {
+    width: 100%;
+    height: 230px;
+    position: relative;
+}
+#ada {
+    background: url("images/adaHero.jpg");
+    background-size: contain;
+}
+#grace {
+    background: url("images/graceHero.jpg");
+    -webkit-filter: grayscale(100%);
+    color: white;
+}
+#anita {
+    background: url("images/anitaHero.jpg");
+    -webkit-filter: grayscale(100%);
+    color: white;
+}
+.imageText {
+    position: absolute;
+    padding-left: 10%;
+}
+.imageText h3 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+    padding-top: 30px;
+}
+.imageText h4 {
+    font-family: 'Sacramento', cursive;
+    font-size: 2em;
+    margin-top: 10px;
+}
+.portrait {
+    display: inline-block;
+    width: 30%;
+}
+.portrait img {}
+footer {
+    margin-top: 50px;
+    text-align: center;
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+.quoteBanner {
+    padding: 10px 25px 10px 25px;
+    color: white;
+    background-color: #76547b;
+    text-align: center;
+}
+iframe {
+    vertical-align: top;
+    margin-top: 10px;
+}
+article {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    padding: 10px;
+    margin: 10px 20px 10px 0px;
+    height: 260px;
+    background-color: grey;
+    overflow: scroll;
+  }
+#mapAttack {
+    padding-top: 187px;
+    margin-bottom: -30px;
+}
+.edit-quote{
+  margin-top: -14px;
+}
