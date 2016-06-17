@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Sigmar+One);
+
+.kitty{
+  position: absolute;
+}
+.flip {
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+
+#cat2 {
+  -webkit-animation: spin 4s infinite linear;
+  padding-top: 600px;
+}
+
+@-webkit-keyframes spin {
+    0%  {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}
+}
+
+#cat3{
+  display:inline-block;
+  padding: 340px 790px;
+
+
+}
+
+body{
+  background: url("https://images2.alphacoders.com/521/521267.jpg");
+  transform-origin: 20% 80%;
+  transition: transform 30s linear;
+}
+
+h1{
+  font-size: 8em;
+  padding-top: 550px;
+  padding-left: 680px;
+  color: white;
+  font-family: fantasy;
+
+}
