@@ -1,0 +1,39 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300);
+img{
+  margin: 20px;
+  border: 5px solid white;
+}
+
+body{
+  background-image: url("http://wallpapercave.com/wp/Yy1rcP0.jpg");
+  background-size: cover;
+  color: white;
+  text-align: center;
+
+}
+
+h1{
+  font-family: 'Lobster', cursive;
+}
+
+p{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+a:link {
+  text-decoration: none;
+  color: rgba(192,192,192, 1);
+}
+
+a:hover {
+  color: rgba(192,192,192, .5);
+}
+
+a:visited {
+  color: rgba(192,192,192, .75);
+}
+
+input {
+  width: 300px;
+}

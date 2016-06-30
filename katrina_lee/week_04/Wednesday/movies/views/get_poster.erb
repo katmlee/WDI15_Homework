@@ -1,0 +1,19 @@
+<h1>Welcome to Movie Finder </h1>
+<% if @movie_info && @movie_info["Search"].size == 1 %>
+<!-- if there is only one movie -->
+  <h1><%=@movie_title_two%></h1>
+  <img src= "<%=@movie_poster_url_two%>">
+<% end %>
+
+<% if @movie_info && @movie_info["Search"].size > 1 %>
+<!-- if there is more than one movie returning send display the title of the movies and add a link to it's respective page-->
+  <% @movie_info["Search"].each do |m| %>
+    <p><a href="/movie_page/<%=m['imdbID']%>"> <%=m['Title']%> </a></p>
+  <% end %>
+<% end %>
+
+<!-- form to retrieve what movie to process -->
+<form action="/get_poster" method="get">
+  <input type="text" name="movie" placeholder="movie title">
+  <button>submit</button>
+</form>
