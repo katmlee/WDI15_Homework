@@ -1,0 +1,34 @@
+<h1>Edit your profile</h1>
+
+<form action="/giraffes/<%= @giraffe['id'] %>" method="post">
+  <label> First Name: </label>
+  <input type="text" name = "first_name" placeholder = "eg. Katurtle" value = "<%= @giraffe['first_name'] %>">
+
+  <label> Last Name: </label>
+  <input type="text" name = "last_name" placeholder = "eg. Lee" value = "<%= @giraffe['last_name'] %>">
+
+  <label> Photo of You: </label>
+  <input type="URL" name = "image" placeholder = "url link to img" value = "<%= @giraffe['image']%>">
+
+  <label> Neighborhood/City: </label>
+  <input type="text" name = "city" placeholder = "eg. Duboce Park, SF" value = "<%=@giraffe['city'] %>">
+
+  <label> Bithday: </label>
+  <input type="text" name = "birthday" placeholder = "YYYY-MM-DD" value = "<%= @giraffe['birthday']%>">
+
+  <label> Your Day Gig: </label>
+  <input type="text" name = "occupation" placeholder = "eg. stripper" value = "<%=@giraffe['occupation'] %>">
+
+  <label> Favorite Noms: </label>
+  <input type="text" name = "fav_food" placeholder = "eg. K(orean) Fried Chicken" value = "<%= @giraffe['fav_food']%>">
+
+  <label> How you Unwind: </label>
+  <input type="text" name = "hobby" placeholder = "eg. juggling bananas" value = "<%= @giraffe['hobby']%>">
+  <label> Burning Man Contribution: </label>
+  <input type="text" name = "bm_contribution" placeholder = "eg. being me" value = "<%= @giraffe['bm_contribution']%>">
+  <label> Favorite BM memory: </label>
+  <input type="text" name = "fav_bm_memory" placeholder = "eg. that time at sunrise..." value = "<%= @giraffe['fav_bm_memory']%>">
+  <label> Anything Else: </label>
+  <input type="text" name = "anything_else" placeholder = "eg. whatever you want" value = "<%= @giraffe['anything_else']%>">
+  <button>Update Profile</button>
+</form>

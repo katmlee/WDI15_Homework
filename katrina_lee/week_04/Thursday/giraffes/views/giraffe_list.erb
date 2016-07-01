@@ -1,0 +1,10 @@
+
+<div class="profiles">
+<h1> Meet your Fellow Giraffes! </h1>
+  <% @giraffes.each do |n| %>
+    <a href="/giraffes/<%= n['id'] %>">
+      <img src = "<%= n["image"] %>">
+      <p><%= n['first_name'] %></p>
+    </a>
+  <% end %>
+</div>

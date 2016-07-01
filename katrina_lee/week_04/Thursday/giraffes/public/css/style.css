@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,300);
+
+img{
+  border-radius: 50%;
+  /*display: block;*/
+
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+nav a{
+  padding: 30px;
+}
+
+nav{
+    text-align: right;
+}
+header{
+  display: inline-block;
+  width:100%;
+  /*background-color: rgba(202, 98, 0, 0.5);*/
+  background-color: rgba(243, 129, 37, 0.5);
+  text-align: right;
+  padding: 15px;
+  margin-top: 0px;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background-size: cover;
+  background-image: url("https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xpf1/t31.0-8/12646614_10100965027888219_3432484249871903395_o.jpg");
+}
+
+.profiles{
+  max-width: 690px;
+  margin-right: auto;
+  margin-left: auto;
+  position:relative;
+  display: block;
+  text-align: center;
+}
+
+.profiles h1{
+  text-align: center;
+  padding-top: 25px;
+}
+
+a p{
+  text-align: center;
+}
+
+a:hover{
+  opacity: .5;
+}
+
+ul{
+  text-decoration: none;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+li{
+  text-align: left;
+  padding-left: 100px;
+  list-style-type: none;
+  padding: 5px;
+}
+
+input{
+  margin: 10px;
+  width: 200px;
+}
+
+label{
+  font-size: 1.25em;
+  font-weight: bold;
+
+}
+
+p{
+    text-align: left;
+}
+
+.home{
+  text-align: center;
+  padding-top: 80px;
+}
+
+.home h1{
+  font-size: 3.25em;
+}
+
+.options a {
+  padding: 20px;
+}
+
+form{
+  padding: 0px 110px;
+}
