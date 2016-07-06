@@ -1,0 +1,5 @@
+<% @parks.each do |n| %>
+<p>
+  <%= link_to n.name, park_path(n.id) %>
+</p>
+<% end %>

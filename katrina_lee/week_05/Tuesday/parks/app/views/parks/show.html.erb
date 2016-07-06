@@ -1,0 +1,15 @@
+<h2><%= @park.name%></h2>
+<%= image_tag @park.image %>
+<ul>
+  <li>Where: <%= @park.state%>, <%= @park.country %> </li>
+  <li>Founded: <%= @park.year%> </li>
+  <li>Annual Visitors: <%= number_to_human @park.annual_visitors%> </li>
+  <li>Size in acres: <%= @park.size%> </li>
+  <li>Katrina visited: <%= @park.visited ? "Yes" : "No" %></li>
+  <li>Known for: <%= @park.known_for %>
+</ul>
+
+<div class="controls">
+  <%= link_to 'Edit park', park_edit_path(@park.id)%>
+  <%= button_to 'Delete park', park_delete_path(@park.id)%>
+</div>

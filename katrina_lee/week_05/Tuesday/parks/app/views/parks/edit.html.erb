@@ -1,0 +1,22 @@
+<form action"<%= park_path(@park.id)%>" method="post">
+  <label for="">Name:</label>
+  <input type="text" name ="park[name]" value="<%= @park.name %>">
+  <label for="">Image:</label>
+  <input type="url" name ="park[image]" value="<%= @park.image %>">
+  <label for="">Country:</label>
+  <input type="text" name ="park[country]" value="<%= @park.country %>">
+  <label for="">State:</label>
+  <input type="text" name = "park[state]" value="<%= @park.state %>">
+  <label for="">Year:</label>
+  <input type="text" name ="park[year]" value="<%= @park.year %>">
+  <label for="">Annual Visitors:</label>
+  <input type="number" name ="park[annual_visitors]" value="<%= @park.annual_visitors %>">
+  <label for="">Size in acres:</label>
+  <input type="number" name ="park[size]" value="<%= @park.size %>">
+  <label for="">Annual Visitors:</label>
+  <input type="boolean" name ="park[visited]" value="<%= @park.visited %>">
+  <!-- is this the right type? -->
+  <label for="">Known for:</label>
+  <input type="text" name ="park[known_for]" value="<%= @park.known_for %>">
+  <button>Create park</button>
+</form>
