@@ -1,0 +1,10 @@
+<h1><%= @author.name %></h1>
+<%= image_tag @author.image, :class => :feature %>
+<p>Date of Birth: <%= @author.dob.strftime '%A %B %e, %Y'%></p>
+<p>Nationality: <%= @author.nationality %></p>
+
+<div class="controls">
+  <%= link_to 'Edit', edit_author_path(@author) %>
+  <%= button_to 'Delete', @author, :method => 'delete', :data => {:confirm => 'Are you sure?'}%>
+
+</div>

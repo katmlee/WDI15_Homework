@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Library</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class ="wrapper">
+    <nav>
+      <%= link_to 'Home', root_path%>
+      |
+      <%= link_to 'All Books', books_path%>
+      <%= link_to 'Add Book', new_book_path%>
+      |
+      <%= link_to 'All Authors', authors_path%>
+      <%= link_to 'Add Author', new_author_path%>
+    </nav>
+
+    <%= yield %>
+  </div>
+</body>
+<footer> &copy; A Novel Idea, a San Francisco-based Book Club  
+</footer>
+</html>

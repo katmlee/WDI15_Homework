@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic);
+body{
+  background-image: url('http://whytoread.com/wp-content/uploads/2015/03/best-books-book-youll-ever-read.jpg');
+  background-position: cover;
+  color: white;
+}
+.wrapper{
+  margin: 0 auto;
+  text-align: center;
+  width: 960px;
+  font-family: 'Libre Baskerville', serif;
+
+}
+
+h1{
+  font-family: 'Libre Baskerville', serif;
+  margin: 20px;
+  font-size: 3em;
+}
+nav a{
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+}
+
+a :visited{
+  color: lightgray;
+}
+.thumb{
+max-width: 10em;
+padding: 20px;
+}
+.feature{
+  max-width: 50%;
+  display: inline-block;
+  margin: 0px auto;
+}
+.controls{
+
+}
+
+label{
+  font-size: 1.25em;
+  font-weight: bold;
+  width: 115px;
+  display: inline-block;
+  text-align: right;
+}
+
+fieldset{
+  border: none;
+}
+
+footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+  color: black;
+}
+
+button{
+  border-radius: 50px;
+}
